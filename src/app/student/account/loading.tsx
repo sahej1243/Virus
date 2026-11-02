@@ -1,0 +1,8 @@
+export default function StudentAccountLoading() {
+  return <main className="student-page student-account-page student-loading-page" aria-label="Loading your account" aria-busy="true">
+    <header className="student-header"><div className="student-brand"><span className="student-brand-mark"><span /></span>printify<span className="student-brand-dot">.</span></div><div className="student-loading-line student-loading-short" /></header>
+    <section className="student-account-welcome"><div><span className="student-loading-line student-loading-eyebrow" /><div className="student-loading-line student-loading-title" /><div className="student-loading-line student-loading-copy" /></div><div className="student-loading-button" /></section>
+    <section className="student-account-panel student-history-panel"><div className="student-account-panel-heading"><div><span className="student-loading-line student-loading-eyebrow" /><div className="student-loading-line student-loading-heading" /></div><div className="student-loading-badge" /></div><div className="student-loading-orders">{Array.from({ length: 3 }, (_, index) => <div className="student-loading-order" key={index}><span className="student-loading-icon" /><div><span className="student-loading-line student-loading-file" /><span className="student-loading-line student-loading-copy" /></div><span className="student-loading-line student-loading-price" /></div>)}</div></section>
+    <nav className="student-bottom-nav student-loading-nav" aria-hidden="true"><span>⌂<small>Home</small></span><span>▤<small>Orders</small></span><span>⚙<small>Settings</small></span></nav>
+  </main>;
+}
